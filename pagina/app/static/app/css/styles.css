@@ -1,0 +1,386 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body{
+    background-color: #FDEBD0;
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
+main{
+    width: 70%;
+}
+
+input::placeholder {
+    color: rgba(201, 201, 201, 1);
+    font-size: 10px;
+  }
+
+.inicio{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:12px ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 10px;
+    color: black;
+
+}
+
+.inicio-item{
+    margin-left: 2px;
+    margin-right: 12px;
+    color: black;
+    
+}
+.fas{
+    color: blue;
+    font-size: 12px;
+}
+.inicio-item-pais{
+    
+    margin-left: 20px;
+    margin-right: 14px;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    font-weight: 800;
+    font-size: 10px;
+    background-color: white;
+    height: 40px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+.menu-logo{
+    align-self: center;
+    margin-left: 28px;
+    max-width: 100%;
+    max-height:100% ;
+    height: 25px;
+}
+
+.menu-lupa{
+    align-self: center;
+    margin-right: 26px;
+    
+}
+
+
+
+.menu-lupa-icono{
+    font-size: 16px;
+}
+
+.navabar-list{
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.contenido{
+    margin-bottom: 10px;
+    background-color: orange;
+}
+.contenido-leyenda-uno{
+    font-size: 6px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    margin-bottom: 4px;
+}
+
+.contenido-titulo{
+    color: blue;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    letter-spacing : 4px;
+    -webkit-text-fill-color: blue;
+    -webkit-text-stroke: 0.5px white;
+    
+  
+}
+.contenido-titulo span{
+    align-items: flex-end;
+    font-size: 50px;
+    text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.7);
+ 
+    
+      
+}
+.contenido-subtitulo{
+    color: blue;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    letter-spacing : 2px;
+    text-shadow: 1px  0px 3px white,
+    0px  1px 3px white,
+   -1px  0px 3px white,
+    0px -1px 3px white;
+}
+
+.contenido-list{
+ 
+    font-size:20px ;
+    color: blue;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.content-list-primario{
+    display: inline;
+}
+.content-espacio{
+    height: 0px;
+    width: 0px;
+}
+
+.content-list-subitem{
+    display: block;
+    font-size: 10px;
+    margin-left: 100px;
+}
+
+.contenido-obligatorios{
+    font-size: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  
+}
+
+.contenido-form{
+    margin-left: 40px;
+}
+
+.contenido-label-form{
+    display: block;
+    font-size: 8px;
+    font-weight: 800;
+    margin-bottom: 2px;
+    margin-top: 6px;
+
+}
+
+.contenido-label-input{
+    padding-top:6px ;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    border-radius: 6px;
+    width: 220px;
+    margin-bottom: 4px;
+    border: none;
+    box-shadow: inset 0 0 3px 2px rgba(0, 0, 0, 0.25);
+
+}
+.contenido-file{
+    display: flex;
+    width: 220px;
+
+}
+
+.cotenido-file-label{
+    color: white;
+    height: 30px;
+    background-color: blue;
+    padding:1px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px ;
+    width: 40%;
+  
+    padding-left: 4px;
+    font-size: 10px;
+}
+
+.contenido-file-input{
+    width: 60%;
+    height: 30px;
+    padding-left: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px ;
+    margin-bottom: 4px;
+    border: none;
+    box-shadow: inset 0 0 3px 2px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.contenido-checkbox{
+    display: flex;
+    justify-content: flex-start;
+}
+.contenido-checkbox-check{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 8px;
+    font-weight: 800;
+}
+.contenido-checkbox-check div{
+    margin-top: 5px;
+}
+
+.contenido-checkbox-contador{
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.contenido-checkbox-contador-item-titulo{
+    font-size: 16px;
+    text-align: center;
+}
+
+.contenido-checkbox-contador-item-contador{
+    font-size: 24px;
+    letter-spacing: 6px;
+    padding-right: 2px;
+    padding-left:2px ;
+    background-color: white;
+    border-radius: 20px;
+    border:solid 1px white;
+    box-shadow      : 0px 5px 5px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.contenido-boton{
+    width: 220px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contenido-alimentate{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 8px;
+
+}
+
+.contenido-leyenda-dos{
+    font-size: 8px;
+    margin-left: 40px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.footer-img{
+    max-width: 100%;
+    max-height:100% ;
+   width: 75px;
+   height: 50px;
+
+}
+
+
+.footer-numeros{
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+}
+.footer-numeros-titulo{
+    color: black;
+    margin-top: 6px;
+}
+.footer-numeros-numero{
+    font-size: 10px;
+}
+
+.footer-redes-titulo{
+    color: black;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.footer-iconos{
+    
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    background-color: blue;
+    padding: 2px;
+    border-radius: 50%;
+
+}
+
+.footer-info{
+    color: black;
+    font-size: 14px;
+}
+
+.derechos{
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.derechos-links{
+    display: flex;
+    
+    
+}
+.derechos-links-item{
+    margin-left: 8px;
+    
+}
+.derechos-links-item-activo{
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

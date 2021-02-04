@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+
+</head>
+<body>
+    <main>
+        <section class="inicio">
+            <a class="inicio-item" href=""> <i class="fas fa-unlock-alt"></i> Incio de sesion</a>
+            <a class="inicio-item" href=""><i class="fas fa-heart"></i> Unete al club enfabebé</a>
+            <a class="inicio-item" href=""> <i class="fas fa-shopping-cart"></i> Comprar</a>
+            
+            <span class="inicio-item-pais">México</span>
+            <a href="">(Cambia de pais)</a>
+            
+        </section>
+        <section class="menu">
+            <img class="menu-logo" src="{% static 'app/img/clubenfo.png' %}" alt="Logo">
+            <ul class="navbar">
+                <li class="navabar-list">Videos de estimulacion </li>
+                <li class="navabar-list dropdown" >Embarazo <i class="fas fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <p >link1</p>
+                        <p >link2</p>
+                    </div>
+                </li>
+                <li class="navabar-list dropdown">Desarrollo del bebe <i class="fas fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <p >link1</p>
+                        <p >link2</p>
+                    </div>
+                </li>
+                <li class="navabar-list dropdown">Solución de Aliminetacion <i class="fas fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <p >link1</p>
+                        <p >link2</p>
+                    </div>
+                </li>
+                <li class="navabar-list dropdown">Products <i class="fas fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <p >link1</p>
+                        <p >link2</p>
+                    </div>
+                </li>
+                <li class="navabar-list">¿Por qué Enfagrow?</li>
+            </ul>
+            <label class="menu-lupa" for="busqueda"> <i class="menu-lupa-icono fas fa-search"></i></label>
+
+        </section>
+        <section class="contenido">
+            <p class="contenido-leyenda-uno">RB-M.21172</p>
+            <p class="contenido-titulo">GANA HASTA $ <span>100,000*</span></p>
+            <p class="contenido-subtitulo">para su educación con <sup style="font-size: 14px;">pesos</sup></p>
+            <div class="contenido-list">
+               
+                    <p class="content-list-primario">1. Compra $350  <span class="content-list-subitem">de productos Enfagrow*</span></p>
+                    <p class="content-list">2. Registrate</p>
+                    <p class="content-list">3. Hay miles de premios**</p>
+              
+             
+            
+            </div>
+            <p class="contenido-obligatorios"> Los campos con * son obligatorios</p>
+            <form class="contenido-form" action="POST">
+                <label  class="contenido-label-form" for="nombre">*Nombre</label> 
+                <input class="contenido-label-input" name="nombre" type="text" placeholder="Ej. Rodigro">
+                <label class="contenido-label-form"  for="apellido">*Apellido</label> 
+                <input class="contenido-label-input" name="apellido" type="text" placeholder="Ej. Sanchez">
+                <label  class="contenido-label-form" for="correo">*Correo electronico</label> 
+                <input class="contenido-label-input" name="correo" type="email" placeholder="Ej. tucorreo@domini.com">
+                <label class="contenido-label-form" for="fecha">*Fecha de nacimiento del bebe </label> 
+                <input class="contenido-label-input" name="fecha" type="date">
+                <label class="contenido-label-form" for="monto">*Monto de compra productos Enfagrow </label> 
+                <input class="contenido-label-input" name="monto" type="number" placeholder="$ 000.0">
+                <label  class="contenido-label-form" for="correo">*Escane o sube una foto de tu ticket</label> 
+                <div class="contenido-file">
+                    <button class="cotenido-file-label">Selecciona un archivo</button>
+                    <input type="text" class="contenido-file-input" placeholder="No se a seleccionado ningun archivo">
+                </div>
+                <div class="contenido-checkbox">
+                    <div class="contenido-checkbox-check">
+                        <div  >
+                            <input type="checkbox" name="terminos" value="terminos">
+                            <label for="terminos"> He leido Términos y Condiciones</label>
+                        </div>
+                    <div>
+                        <input type="checkbox" name="privacidad" value="privacidad">
+                        <label for="privacidad"> He leido y acepto el aviso de privacidad </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="adulto" value="adulto" >
+                        <label for="adulto"> Soy mayor de edad</label>
+                    </div>
+                    
+                    </div>
+                    <div class="contenido-checkbox-contador">
+                        <p class="contenido-checkbox-contador-item-titulo">Registros</p>
+                        <p class="contenido-checkbox-contador-item-contador">000240</p>
+                    </div>
+                
+                </div>
+                <button class="contenido-boton" type="submit">Enviar datos y participar </button>
+            </form>
+            <p class="contenido-alimentate">ALIMENTALO SANAMENTE </p>
+            <p class="contenido-leyenda-dos">*Enfagrow puede formar parte de una dieta correcta en niños de 1 a 3 años ** Consulte termninos y condiciones en https://www.enfragwo.com/promoasasasasasasasasasdasdasdasd vigencia del 1 de ferecro al 28 de marzo </p>
+            </div>
+        </section>
+        <section class="footer">
+            <img class="footer-img" src="{% static 'app/img/med.jfif' %}" alt="Logo empresa">
+            <div class="footer-numeros">
+                <p class="footer-numeros-titulo">lada sin costo </p>
+                <p class="footer-numeros-numero">800 90900000</p>
+                <p class="footer-numeros-titulo">CDMX</p>
+                <p class="footer-numeros-numero">555854-0078</p>
+            </div>
+            <div class="footer-redes">
+                <p class="footer-redes-titulo">Redes sociales </p>
+                <div>
+                    <a class="footer-iconos" href=""><i class="fab fa-facebook"></i></a>
+                    <a class="footer-iconos" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="footer-iconos" href=""> <i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>Descarga y disfruta enfrawars</p>
+            </div>
+
+        </section>
+        <section class="derechos">
+            <p>@2019 mead johson & Company todos los derechos reservados </p>
+            <div class="derechos-links">
+                <p class="derechos-links-item">Aviso de privacidad</p>
+                <p class="derechos-links-item">Terminos y condiciones </p>
+                <p class="derechos-links-item-activo ">Mapa del sitio</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
